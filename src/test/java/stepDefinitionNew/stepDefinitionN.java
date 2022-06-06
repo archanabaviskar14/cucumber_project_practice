@@ -17,6 +17,9 @@ public class stepDefinitionN {
 
 	public WebDriver driver=null;
 	
+	
+	
+	
 	@Given("^Open the browser$")
 	public void open_the_browser() throws Throwable {
 	    
@@ -102,6 +105,29 @@ public class stepDefinitionN {
 	    Assert.assertEquals(true, title.contains("archu.sonawane"));
 	    System.out.println("Test Passed");  
 	}
+	
+	@When("Enter incorrect username {string} and password {string}")
+	public void enter_incorrect_username_and_password(String username, String password)
+	{
+		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);   
+
+	   }
+
+	@Then("Proper error must be displayed and promt to login again")
+	public void proper_error_must_be_displayed_and_promt_to_login_again()
+	{
+		String captext=driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/ul/li/strong")).getText();
+		
+		if(captext.contains("Error"))  //test for invalid inputs
+		{
+			Assert.assertTrue(true, "Invalid username and password");
+		}
+		else
+		{
+			Assert.assertTrue(false);
+		}}
+
 	
 	
 	@Then("Verify login")
