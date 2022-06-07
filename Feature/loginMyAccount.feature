@@ -44,68 +44,90 @@ Feature: MyAccount-Login Feature
 	#Then User must successfully login to the web page
 	
 	#Simple login with Data table for single input with header
-	Scenario: Log-in with valid username and password 
-	Given Open the browser
-	When Enter the URL "http://practice.automationtesting.in/"
-	And Click on My Account Menu
-	And Enter registered username and password
-			| username | password |
-			| archu.sonawane@gmail.com | taranayan1420 |
-			| ravi@gmail.com | test123 |
-	And Click on login button
-	Then User must successfully login to the web page
+	#Scenario: Log-in with valid username and password 
+	#Given Open the browser
+	#When Enter the URL "http://practice.automationtesting.in/"
+	#And Click on My Account Menu
+	#And Enter registered username and password
+	#		| username | password |
+	#		| archu.sonawane@gmail.com | taranayan1420 |
+	#		| ravi@gmail.com | test123 |
+	#And Click on login button
+	#Then User must successfully login to the web page
 	
 	#Simple login with incorrect username and correct password
-	Scenario:Log-in with incorrect username and correct password
-	Given Open the browser
-	When  Enter the URL "http://practice.automationtesting.in/"
-	And   Click on My Account Menu
-	And   Enter incorrect username "arrr@gmail.com" and password "taranayan1420"
-	And   Click on login button
-	Then  Proper error must be displayed and promt to login again
+	#Scenario:Log-in with incorrect username and correct password
+	#Given Open the browser
+	#When  Enter the URL "http://practice.automationtesting.in/"
+	#And   Click on My Account Menu
+	#And   Enter incorrect username "arrr@gmail.com" and password "taranayan1420"
+	#And   Click on login button
+	#Then  Proper error must be displayed and promt to login again
 	
 	#Simple login with correct username and incorrect password
-	Scenario:Log-in with incorrect username and correct password
-	Given Open the browser
-	When  Enter the URL "http://practice.automationtesting.in/"
-	And   Click on My Account Menu
-	And   Enter incorrect username "archu.sonawane@gmail.com" and password "taranayan"
-	And   Click on login button
-	Then  Proper error must be displayed and promt to login again
+	#Scenario:Log-in with incorrect username and correct password
+	#Given Open the browser
+	#When  Enter the URL "http://practice.automationtesting.in/"
+	#And   Click on My Account Menu
+	#And   Enter incorrect username "archu.sonawane@gmail.com" and password "taranayan"
+	#And   Click on login button
+	#Then  Proper error must be displayed and promt to login again
 	
 	
 	#Simple login with incorrect username and incorrect password
-	Scenario:Log-in with incorrect username and incorrect password
-	Given Open the browser
-	When  Enter the URL "http://practice.automationtesting.in/"
-	And   Click on My Account Menu
-	And   Enter incorrect username "ar14@gmail.com" and password "1234"
-	And   Click on login button
-	Then  Proper error must be displayed and promt to login again
+	#Scenario:Log-in with incorrect username and incorrect password
+	#Given Open the browser
+	#When  Enter the URL "http://practice.automationtesting.in/"
+	#And   Click on My Account Menu
+	#And   Enter incorrect username "ar14@gmail.com" and password "1234"
+	#And   Click on login button
+	#Then  Proper error must be displayed and promt to login again
 	
 	#Simple login with correct username and empty password
-	Scenario:Log-in with correct username and empty password
-	Given Open the browser
-	When  Enter the URL "http://practice.automationtesting.in/"
-	And   Click on My Account Menu
-	And   Enter incorrect username "archu.sonawane@gmail.com" and password ""
-	And   Click on login button
-	Then  Proper error must be displayed and promt to login again
+	#Scenario:Log-in with correct username and empty password
+	#Given Open the browser
+	#When  Enter the URL "http://practice.automationtesting.in/"
+	#And   Click on My Account Menu
+	#And   Enter incorrect username "archu.sonawane@gmail.com" and password ""
+	#And   Click on login button
+	#Then  Proper error must be displayed and promt to login again
 	
 	#Simple login with empty username and correct password
-	Scenario:Log-in with empty username and correct password
-	Given Open the browser
-	When  Enter the URL "http://practice.automationtesting.in/"
-	And   Click on My Account Menu
-	And   Enter incorrect username "" and password "taranayan1420"
-	And   Click on login button
-	Then  Proper error must be displayed and promt to login again
+	#Scenario:Log-in with empty username and correct password
+	#Given Open the browser
+	#When  Enter the URL "http://practice.automationtesting.in/"
+	#And   Click on My Account Menu
+	#And   Enter incorrect username "" and password "taranayan1420"
+	#And   Click on login button
+	#Then  Proper error must be displayed and promt to login again
 	
 	#Simple login with empty username and empty password
-	Scenario:Log-in with empty username and empty password
-	Given Open the browser
-	When  Enter the URL "http://practice.automationtesting.in/"
-	And   Click on My Account Menu
-	And   Enter incorrect username "" and password ""
-	And   Click on login button
-	Then  Proper error must be displayed and promt to login again
+	#Scenario:Log-in with empty username and empty password
+	#Given Open the browser
+	#When  Enter the URL "http://practice.automationtesting.in/"
+	#And   Click on My Account Menu
+	#And   Enter incorrect username "" and password ""
+	#And   Click on login button
+	#Then  Proper error must be displayed and promt to login again
+
+
+#Scenario:Verify Logout feature
+#Given  Open the browser
+#When   Enter the URL "http://practice.automationtesting.in/"
+#And   Click on My Account Menu
+#And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+#And   Click on login button
+#And   User must successfully login to the web page
+#And   Click on Logout
+#Then  After clicking logout,User must successfully come out of the website
+	
+Scenario:Verify My Account-Dashboard feature
+Given Open the browser
+When  Enter the URL "http://practice.automationtesting.in/"
+And   Click on My Account Menu
+And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+And   Click on login button
+And   User must successfully login to the web page
+And   Click on Dashboard
+Then  User must view Dashboard of the website
+		

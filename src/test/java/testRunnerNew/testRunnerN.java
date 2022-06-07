@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 				//features="Feature",
 				//features="C://Users//RavindraBaviskar//eclipse-workspace//TestingCucumber//Feature//Tagging.feature",
 				 // features="C:\\Users\\RavindraBaviskar\\eclipse-workspace\\TestingCucumber\\Feature\\Hooks.feature",
-				  features="\\Users\\RavindraBaviskar\\eclipse-workspace\\TestingCucumber\\Feature\\loginMyAccount.feature",
+				features="\\Users\\RavindraBaviskar\\eclipse-workspace\\TestingCucumber\\Feature\\loginMyAccount.feature",
 				glue="stepDefinitionNew",
 				plugin={"pretty","html:test-output","json:json_output/cucumber.json"},
 				//plugin ={"html:target/cucumber-html-report", "json:target/cucumber-json-report.json" },
@@ -24,6 +24,7 @@ import io.cucumber.junit.CucumberOptions;
 				//tags="@SanityTest",	//executes only Sanity tests scenario
 				//tags="@SanityTest and @RegressionTest",	//executes scenarios which are under both in Sanity and Regression tests scenario
 				//tags="not @SanityTest",			//it will avoid end2end scenario and will executes all other rest of the scenario		
+				//tags="@RegressionTest",
 				monochrome=true
 				)
 

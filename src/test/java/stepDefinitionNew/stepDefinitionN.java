@@ -113,6 +113,27 @@ public class stepDefinitionN {
 		driver.findElement(By.name("password")).sendKeys(password);   
 
 	   }
+	
+	@When("Enter registered username {string} and password {string}")
+	public void enter_registered_username_and_password(String user, String pwd)
+	{
+		driver.findElement(By.name("username")).sendKeys(user);
+		driver.findElement(By.name("password")).sendKeys(pwd);   
+
+	}
+
+	@When("Click on Logout")
+	public void click_on_logout()
+	{
+	    driver.findElement(By.linkText("Logout")).click();
+	}
+
+	@Then("After clicking logout,User must successfully come out of the website")
+	public void after_clicking_logout_user_must_successfully_come_out_of_the_website() {
+	
+		System.out.println("successfully logged out");
+	}
+
 
 	@Then("Proper error must be displayed and promt to login again")
 	public void proper_error_must_be_displayed_and_promt_to_login_again()
@@ -144,6 +165,19 @@ public class stepDefinitionN {
 			Assert.assertTrue(false);
 		}
 	}
+	//My Account-Dashboard feature
+	@When("Click on Dashboard")
+	public void click_on_dashboard()
+	{
+		driver.findElement(By.linkText("Dashboard")).click();
+	}
+
+	@Then("User must view Dashboard of the website")
+	public void user_must_view_dashboard_of_the_website()
+	{
+		System.out.println("WELCOME TO DASHBOARD");
+	}
+
 
 
 }
