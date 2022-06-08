@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-06-07T08:05:09.271Z",
+        "start_timestamp": "2022-06-07T08:55:10.353Z",
         "before": [
           {
             "result": {
-              "duration": 5979600,
+              "duration": 5984700,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,6 @@
         "after": [
           {
             "result": {
-              "duration": 997500,
               "status": "passed"
             },
             "match": {
@@ -35,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11410054700,
+              "duration": 10890963800,
               "status": "passed"
             },
             "line": 125,
@@ -47,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 4753280700,
+              "duration": 3633909100,
               "status": "passed"
             },
             "line": 126,
@@ -65,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 2199115200,
+              "duration": 3134058600,
               "status": "passed"
             },
             "line": 127,
@@ -77,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 962425400,
+              "duration": 441817500,
               "status": "passed"
             },
             "line": 128,
@@ -99,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 2242002300,
+              "duration": 2706098200,
               "status": "passed"
             },
             "line": 129,
@@ -111,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 698132200,
+              "duration": 280256000,
               "status": "passed"
             },
             "line": 130,
@@ -123,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 2101378800,
+              "duration": 1411228800,
               "status": "passed"
             },
             "line": 131,
@@ -135,13 +134,609 @@
           },
           {
             "result": {
-              "duration": 997400,
+              "duration": 997700,
               "status": "passed"
             },
             "line": 132,
             "name": "User must view Dashboard of the website",
             "match": {
               "location": "stepDefinitionNew.stepDefinitionN.user_must_view_dashboard_of_the_website()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T08:55:33.076Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 134,
+        "name": "Verify My Account-Order feature",
+        "description": "",
+        "id": "myaccount-login-feature;verify-my-account-order-feature",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10012719400,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "Open the browser",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3719038800,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "Enter the URL \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_the_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2604032900,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "Click on My Account Menu",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_My_Account_Menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 661230900,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "Enter registered username \"archu.sonawane@gmail.com\" and password \"taranayan1420\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"archu.sonawane@gmail.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"taranayan1420\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_registered_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000464700,
+              "status": "passed"
+            },
+            "line": 139,
+            "name": "Click on login button",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251328500,
+              "status": "passed"
+            },
+            "line": 140,
+            "name": "User must successfully login to the web page",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_successfully_login_to_the_web_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2463313500,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "Click on Orders",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_orders()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "User must view all their orders after clicking orders link",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_view_all_their_orders_after_clicking_orders_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T08:55:54.827Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 144,
+        "name": "Verify My Account-Order Details feature",
+        "description": "",
+        "id": "myaccount-login-feature;verify-my-account-order-details-feature",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10082621200,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "Open the browser",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3406885100,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "Enter the URL \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_the_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2707756300,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "Click on My Account Menu",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_My_Account_Menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 482707600,
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "Enter registered username \"archu.sonawane@gmail.com\" and password \"taranayan1420\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"archu.sonawane@gmail.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"taranayan1420\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_registered_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1936817100,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "Click on login button",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259304900,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "User must successfully login to the web page",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_successfully_login_to_the_web_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1873360000,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "Click on Orders",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_orders()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2053764500,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "Click on View button",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_view_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "User must view his orders details,customer details and billing details after clicking orders link",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_view_his_orders_details_customer_details_and_billing_details_after_clicking_orders_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T08:56:17.658Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 155,
+        "name": "Verify My Account-Address feature",
+        "description": "",
+        "id": "myaccount-login-feature;verify-my-account-address-feature",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10256315100,
+              "status": "passed"
+            },
+            "line": 156,
+            "name": "Open the browser",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3804818000,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "Enter the URL \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_the_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3043854000,
+              "status": "passed"
+            },
+            "line": 158,
+            "name": "Click on My Account Menu",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_My_Account_Menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1182836000,
+              "status": "passed"
+            },
+            "line": 159,
+            "name": "Enter registered username \"archu.sonawane@gmail.com\" and password \"taranayan1420\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"archu.sonawane@gmail.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"taranayan1420\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_registered_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2390603900,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "Click on login button",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 232377400,
+              "status": "passed"
+            },
+            "line": 161,
+            "name": "User must successfully login to the web page",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_successfully_login_to_the_web_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1732367400,
+              "status": "passed"
+            },
+            "line": 162,
+            "name": "Click on Address",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 986600,
+              "status": "passed"
+            },
+            "line": 163,
+            "name": "User must view his billing address and shipping address after clicking Address link",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_view_his_billing_address_and_shipping_address_after_clicking_address_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-07T08:56:40.323Z",
+        "before": [
+          {
+            "result": {
+              "duration": 995900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 165,
+        "name": "Verify My Account-Edit Address functionality",
+        "description": "",
+        "id": "myaccount-login-feature;verify-my-account-edit-address-functionality",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitionNew.HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10500948000,
+              "status": "passed"
+            },
+            "line": 166,
+            "name": "Open the browser",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4055150700,
+              "status": "passed"
+            },
+            "line": 167,
+            "name": "Enter the URL \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_the_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3126867000,
+              "status": "passed"
+            },
+            "line": 168,
+            "name": "Click on My Account Menu",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_My_Account_Menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 658234700,
+              "status": "passed"
+            },
+            "line": 169,
+            "name": "Enter registered username \"archu.sonawane@gmail.com\" and password \"taranayan1420\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"archu.sonawane@gmail.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"taranayan1420\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitionNew.stepDefinitionN.enter_registered_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2067469300,
+              "status": "passed"
+            },
+            "line": 170,
+            "name": "Click on login button",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 334103300,
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "User must successfully login to the web page",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_successfully_login_to_the_web_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2657714400,
+              "status": "passed"
+            },
+            "line": 172,
+            "name": "Click on Address",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5115313300,
+              "status": "passed"
+            },
+            "line": 173,
+            "name": "Click on edit Billing Address",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_edit_billing_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223401500,
+              "status": "passed"
+            },
+            "line": 175,
+            "name": "User details must be updated",
+            "match": {
+              "location": "stepDefinitionNew.stepDefinitionN.user_details_must_be_updated()"
             },
             "keyword": "Then "
           }

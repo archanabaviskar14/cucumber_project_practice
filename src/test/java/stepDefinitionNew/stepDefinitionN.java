@@ -177,6 +177,73 @@ public class stepDefinitionN {
 	{
 		System.out.println("WELCOME TO DASHBOARD");
 	}
+	
+	//My Account-Orders feature
+	@When("Click on Orders")
+	public void click_on_orders()
+	{
+		driver.findElement(By.linkText("Orders")).click();
+	}
+
+	@Then("User must view all their orders after clicking orders link")
+	public void user_must_view_all_their_orders_after_clicking_orders_link() 
+	{
+	    System.out.println("All the orders");
+	}
+
+	@When("Click on View button")
+	public void click_on_view_button()
+	{
+		driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/table/tbody/tr/td[5]/a")).click();
+	}
+
+	@Then("User must view his orders details,customer details and billing details after clicking orders link")
+	public void user_must_view_his_orders_details_customer_details_and_billing_details_after_clicking_orders_link()
+	{
+	    System.out.println("Order details");
+	}
+
+	//My Account-Address feature
+	@When("Click on Address")
+	public void click_on_address()
+	{
+		driver.findElement(By.linkText("Addresses")).click();
+	}
+
+	@Then("User must view his billing address and shipping address after clicking Address link")
+	public void user_must_view_his_billing_address_and_shipping_address_after_clicking_address_link()
+	{
+	    System.out.println("Billing Address");
+	}
+
+	//My Account-Edit Address feature
+	@When("Click on edit Billing Address")
+	public void click_on_edit_billing_address() 
+	{
+		driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/div/div[1]/header/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"billing_address_2\"]")).sendKeys("Bridge house-5");
+		driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/form/p[12]/input[1]")).click();
+	}
+
+	@When("Click on edit Shipping Address")
+	public void click_on_edit_shipping_address() 
+	{
+		driver.findElement(By.linkText("Dashboard")).click();
+	}
+
+	@Then("User details must be updated")
+	public void user_details_must_be_updated()
+	{
+		String title=driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div[1]")).getText();
+		if(title.contains("changed successfully"))
+		{
+			System.out.println("Test passed");
+		}
+		else
+		{
+			System.out.println("Test failed");
+		}
+	}
 
 
 

@@ -130,4 +130,58 @@ And   Click on login button
 And   User must successfully login to the web page
 And   Click on Dashboard
 Then  User must view Dashboard of the website
+
+Scenario:Verify My Account-Order feature
+Given Open the browser
+When  Enter the URL "http://practice.automationtesting.in/"
+And   Click on My Account Menu
+And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+And   Click on login button
+And   User must successfully login to the web page
+And   Click on Orders
+Then  User must view all their orders after clicking orders link
+
+Scenario:Verify My Account-Order Details feature
+Given Open the browser
+When  Enter the URL "http://practice.automationtesting.in/"
+And   Click on My Account Menu
+And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+And   Click on login button
+And   User must successfully login to the web page
+And   Click on Orders
+And   Click on View button
+Then  User must view his orders details,customer details and billing details after clicking orders link
+
+Scenario:Verify My Account-Address feature
+Given Open the browser
+When  Enter the URL "http://practice.automationtesting.in/"
+And   Click on My Account Menu
+And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+And   Click on login button
+And   User must successfully login to the web page
+And   Click on Address
+Then  User must view his billing address and shipping address after clicking Address link
+
+Scenario:Verify My Account-Edit Address functionality
+Given Open the browser
+When  Enter the URL "http://practice.automationtesting.in/"
+And   Click on My Account Menu
+And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+And   Click on login button
+And   User must successfully login to the web page
+And   Click on Address
+And   Click on edit Billing Address
+#And   Click on edit Shipping Address
+Then  User details must be updated
+
+
+
+
+
+
+
+
+
+
+
 		
