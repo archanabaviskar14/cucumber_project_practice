@@ -5,7 +5,9 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import io.cucumber.java.PendingException;
@@ -244,6 +246,49 @@ public class stepDefinitionN {
 			System.out.println("Test failed");
 		}
 	}
+	
+	//shop-filter by category functionality
+	
+	@When("Click on Shop Menu")
+	public void click_on_shop_menu() {
+	    
+		driver.findElement(By.linkText("Shop")).click();
+	}
+
+	@When("Click on any of the product links available in product category")
+	public void click_on_any_of_the_product_links_available_in_product_category()
+	{
+		driver.findElement(By.linkText("Android")).click();
+	 }
+
+	@Then("Now user can view that particular product")
+	public void now_user_can_view_that_particular_product() {
+		System.out.println("Filter test passed");
+	    }
+
+	//shop-filter by price category functionality
+	
+
+@When("Adjust the filter by price between {int} and {int} rs")
+public void adjust_the_filter_by_price_between_and_rs(Integer int1, Integer int2) 
+{
+	WebElement slider=driver.findElement(By.xpath("//*[@id=\"woocommerce_price_filter-2\"]/form/div/div[1]/span[1]"));
+	Actions act=new Actions(driver);
+	act.moveToElement(slider).dragAndDropBy(slider, int1, int2).build().perform();
+}
+
+@When("Click on filter button")
+public void click_on_filter_button()
+{
+	driver.findElement(By.xpath("//*[@id=\"woocommerce_price_filter-2\"]/form/div/div[2]/button")).click();
+}
+
+@Then("User can view books only between {int} to {int} rs price")
+public void user_can_view_books_only_between_to_rs_price(Integer int1, Integer int2)
+{
+   System.out.println("test passed");
+}
+
 
 
 

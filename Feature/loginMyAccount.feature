@@ -121,58 +121,73 @@ Feature: MyAccount-Login Feature
 #And   Click on Logout
 #Then  After clicking logout,User must successfully come out of the website
 	
-Scenario:Verify My Account-Dashboard feature
-Given Open the browser
-When  Enter the URL "http://practice.automationtesting.in/"
-And   Click on My Account Menu
-And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
-And   Click on login button
-And   User must successfully login to the web page
-And   Click on Dashboard
-Then  User must view Dashboard of the website
+#Scenario:Verify My Account-Dashboard feature
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on My Account Menu
+#And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+#And   Click on login button
+#And   User must successfully login to the web page
+#And   Click on Dashboard
+#Then  User must view Dashboard of the website
 
-Scenario:Verify My Account-Order feature
-Given Open the browser
-When  Enter the URL "http://practice.automationtesting.in/"
-And   Click on My Account Menu
-And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
-And   Click on login button
-And   User must successfully login to the web page
-And   Click on Orders
-Then  User must view all their orders after clicking orders link
+#Scenario:Verify My Account-Order feature
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on My Account Menu
+#And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+#And   Click on login button
+#And   User must successfully login to the web page
+#And   Click on Orders
+#Then  User must view all their orders after clicking orders link
 
-Scenario:Verify My Account-Order Details feature
-Given Open the browser
-When  Enter the URL "http://practice.automationtesting.in/"
-And   Click on My Account Menu
-And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
-And   Click on login button
-And   User must successfully login to the web page
-And   Click on Orders
-And   Click on View button
-Then  User must view his orders details,customer details and billing details after clicking orders link
+#Scenario:Verify My Account-Order Details feature
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on My Account Menu
+#And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+#And   Click on login button
+#And   User must successfully login to the web page
+#And   Click on Orders
+#And   Click on View button
+#Then  User must view his orders details,customer details and billing details after clicking orders link
 
-Scenario:Verify My Account-Address feature
-Given Open the browser
-When  Enter the URL "http://practice.automationtesting.in/"
-And   Click on My Account Menu
-And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
-And   Click on login button
-And   User must successfully login to the web page
-And   Click on Address
-Then  User must view his billing address and shipping address after clicking Address link
+#Scenario:Verify My Account-Address feature
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on My Account Menu
+#And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+#And   Click on login button
+#And   User must successfully login to the web page
+#And   Click on Address
+#Then  User must view his billing address and shipping address after clicking Address link
 
-Scenario:Verify My Account-Edit Address functionality
-Given Open the browser
-When  Enter the URL "http://practice.automationtesting.in/"
-And   Click on My Account Menu
-And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
-And   Click on login button
-And   User must successfully login to the web page
-And   Click on Address
-And   Click on edit Billing Address
+#Scenario:Verify My Account-Edit Address functionality
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on My Account Menu
+#And   Enter registered username "archu.sonawane@gmail.com" and password "taranayan1420"
+#And   Click on login button
+#And   User must successfully login to the web page
+#And   Click on Address
+#And   Click on edit Billing Address
 #And   Click on edit Shipping Address
-Then  User details must be updated
+#Then  User details must be updated
+
+#Scenario:Verify Shop-Filter by product category functionality
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on Shop Menu
+#And   Click on any of the product links available in product category
+#Then  Now user can view that particular product
+
+Scenario:Verify Shop-Filter by price category functionality
+Given Open the browser
+When  Enter the URL "http://practice.automationtesting.in/"
+And   Click on Shop Menu
+And   Adjust the filter by price between 246 and 400 rs
+And   Click on filter button
+Then  User can view books only between 246 to 400 rs price
 
 
 
