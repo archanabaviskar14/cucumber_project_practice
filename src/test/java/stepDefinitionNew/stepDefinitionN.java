@@ -289,6 +289,37 @@ public void user_can_view_books_only_between_to_rs_price(Integer int1, Integer i
    System.out.println("test passed");
 }
 
+//registrration functinality
+
+@When("Enter the registered email id {string} and password {string}")
+public void enter_the_registered_email_id_and_password(String emailid, String pwd)
+{
+	driver.findElement(By.name("email")).sendKeys(emailid);
+	driver.findElement(By.id("reg_password")).sendKeys(pwd);
+}
+
+@When("Click on Register button")
+public void click_on_register_button() 
+{
+	driver.findElement(By.name("register")).click();
+}
+
+@Then("User must be registered successfully")
+public void user_must_be_registered_successfully() 
+{
+	String title=driver.findElement(By.tagName("p")).getText();
+	if(title.contains("arch")) 
+	{
+		Assert.assertTrue(true);
+		System.out.println("user registered");
+	}
+	else
+	{
+		Assert.assertTrue(false);
+		System.out.println("registration failed");
+	}
+}
+
 
 
 

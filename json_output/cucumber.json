@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-06-10T07:55:59.731Z",
+        "start_timestamp": "2022-06-17T16:02:09.239Z",
         "before": [
           {
             "result": {
-              "duration": 2992800,
+              "duration": 3989700,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,14 @@
             }
           }
         ],
-        "line": 177,
-        "name": "Verify Shop-Filter by product category functionality",
+        "line": 192,
+        "name": "Verify Registration functionality with valid Email and valid password",
         "description": "",
-        "id": "myaccount-login-feature;verify-shop-filter-by-product-category-functionality",
+        "id": "myaccount-login-feature;verify-registration-functionality-with-valid-email-and-valid-password",
         "after": [
           {
             "result": {
+              "duration": 1996800,
               "status": "passed"
             },
             "match": {
@@ -34,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 12500626700,
+              "duration": 10634432400,
               "status": "passed"
             },
-            "line": 178,
+            "line": 193,
             "name": "Open the browser",
             "match": {
               "location": "stepDefinitionNew.stepDefinitionN.open_the_browser()"
@@ -46,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 4642894600,
+              "duration": 6358984400,
               "status": "passed"
             },
-            "line": 179,
+            "line": 194,
             "name": "Enter the URL \"http://practice.automationtesting.in/\"",
             "match": {
               "arguments": [
@@ -64,166 +65,59 @@
           },
           {
             "result": {
-              "duration": 4391250100,
+              "duration": 2461416500,
               "status": "passed"
             },
-            "line": 180,
-            "name": "Click on Shop Menu",
+            "line": 195,
+            "name": "Click on My Account Menu",
             "match": {
-              "location": "stepDefinitionNew.stepDefinitionN.click_on_shop_menu()"
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_My_Account_Menu()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3737998200,
+              "duration": 917554200,
               "status": "passed"
             },
-            "line": 181,
-            "name": "Click on any of the product links available in product category",
-            "match": {
-              "location": "stepDefinitionNew.stepDefinitionN.click_on_any_of_the_product_links_available_in_product_category()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 182,
-            "name": "Now user can view that particular product",
-            "match": {
-              "location": "stepDefinitionNew.stepDefinitionN.now_user_can_view_that_particular_product()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-06-10T07:56:25.152Z",
-        "before": [
-          {
-            "result": {
-              "duration": 994400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitionNew.HooksStepDefinition.setup()"
-            }
-          }
-        ],
-        "line": 184,
-        "name": "Verify Shop-Filter by price category functionality",
-        "description": "",
-        "id": "myaccount-login-feature;verify-shop-filter-by-price-category-functionality",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitionNew.HooksStepDefinition.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10783977100,
-              "status": "passed"
-            },
-            "line": 185,
-            "name": "Open the browser",
-            "match": {
-              "location": "stepDefinitionNew.stepDefinitionN.open_the_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3992440800,
-              "status": "passed"
-            },
-            "line": 186,
-            "name": "Enter the URL \"http://practice.automationtesting.in/\"",
+            "line": 196,
+            "name": "Enter the registered email id \"archu14@gmail.com\" and password \"archu1234hjku\"",
             "match": {
               "arguments": [
                 {
-                  "val": "http://practice.automationtesting.in/",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitionNew.stepDefinitionN.enter_the_URL(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4094044400,
-              "status": "passed"
-            },
-            "line": 187,
-            "name": "Click on Shop Menu",
-            "match": {
-              "location": "stepDefinitionNew.stepDefinitionN.click_on_shop_menu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 863689200,
-              "status": "passed"
-            },
-            "line": 188,
-            "name": "Adjust the filter by price between 246 and 500 rs",
-            "match": {
-              "arguments": [
-                {
-                  "val": "246",
-                  "offset": 35
+                  "val": "\"archu14@gmail.com\"",
+                  "offset": 30
                 },
                 {
-                  "val": "500",
-                  "offset": 43
+                  "val": "\"archu1234hjku\"",
+                  "offset": 63
                 }
               ],
-              "location": "stepDefinitionNew.stepDefinitionN.adjust_the_filter_by_price_between_and_rs(java.lang.Integer,java.lang.Integer)"
+              "location": "stepDefinitionNew.stepDefinitionN.enter_the_registered_email_id_and_password(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3488659400,
+              "duration": 2263235600,
               "status": "passed"
             },
-            "line": 189,
-            "name": "Click on filter button",
+            "line": 197,
+            "name": "Click on Register button",
             "match": {
-              "location": "stepDefinitionNew.stepDefinitionN.click_on_filter_button()"
+              "location": "stepDefinitionNew.stepDefinitionN.click_on_register_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 997400,
+              "duration": 409897900,
               "status": "passed"
             },
-            "line": 190,
-            "name": "User can view books only between 246 to 500 rs price",
+            "line": 198,
+            "name": "User must be registered successfully",
             "match": {
-              "arguments": [
-                {
-                  "val": "246",
-                  "offset": 33
-                },
-                {
-                  "val": "500",
-                  "offset": 40
-                }
-              ],
-              "location": "stepDefinitionNew.stepDefinitionN.user_can_view_books_only_between_to_rs_price(java.lang.Integer,java.lang.Integer)"
+              "location": "stepDefinitionNew.stepDefinitionN.user_must_be_registered_successfully()"
             },
             "keyword": "Then "
           }

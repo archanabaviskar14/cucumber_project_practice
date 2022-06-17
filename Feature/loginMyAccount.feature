@@ -181,14 +181,21 @@ Feature: MyAccount-Login Feature
 #And   Click on any of the product links available in product category
 #Then  Now user can view that particular product
 
-Scenario:Verify Shop-Filter by price category functionality
+#Scenario:Verify Shop-Filter by price category functionality
+#Given Open the browser
+#When  Enter the URL "http://practice.automationtesting.in/"
+#And   Click on Shop Menu
+#And   Adjust the filter by price between 246 and 400 rs
+#And   Click on filter button
+#Then  User can view books only between 246 to 400 rs price
+
+Scenario:Verify Registration functionality with valid Email and valid password
 Given Open the browser
 When  Enter the URL "http://practice.automationtesting.in/"
-And   Click on Shop Menu
-And   Adjust the filter by price between 246 and 400 rs
-And   Click on filter button
-Then  User can view books only between 246 to 400 rs price
-
+And   Click on My Account Menu
+And   Enter the registered email id "archu14@gmail.com" and password "archu1234hjku"
+And   Click on Register button
+Then  User must be registered successfully
 
 
 
